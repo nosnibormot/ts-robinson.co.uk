@@ -12,11 +12,3 @@ github_username:  nosnibormot
 
 jekyll-crosspost_to_medium:
   enabled: true
-  cache: .jekyll-crosspost_to_medium
-  status: public
-  license: all-rights-reserved (default)
-  text: '<p><i>James Hamann.</i></p>',
-  backdate: true
-
-# Build settings
-markdown: kramdown
