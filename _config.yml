@@ -12,6 +12,7 @@ github_username:  nosnibormot
 
 jekyll-crosspost_to_medium:
   enabled: true
-
-gems:
-  jekyll-crosspost-to-medium
+  cache: .cache
+  status: public # public | draft | unlisted
+  #license: all-rights-reserved
+  text: '<p><i>This post originally appeared <a href=\"#{url}\" rel=\"canonical\">on ts-robinson.co.uk</a>.</i></p>'
