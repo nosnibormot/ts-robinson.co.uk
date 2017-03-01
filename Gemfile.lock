@@ -1,6 +1,8 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     dotenv (2.1.1)
+    json (2.0.2)
     kramdown (1.13.2)
 
 PLATFORMS
@@ -8,6 +10,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
+  json
   kramdown
 
 BUNDLED WITH
