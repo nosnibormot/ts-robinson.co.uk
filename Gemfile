@@ -1,6 +1,3 @@
 source 'https://rubygems.org'
 gem 'dotenv'
 gem 'kramdown'
-gem 'json'
-gem 'jekyll'
-gem 'jekyll-crosspost-to-medium'
