@@ -12,4 +12,6 @@ github_username:  nosnibormot
 
 jekyll-crosspost_to_medium:
   enabled: true
-  cache: .jekyll-crosspost_to_medium
+
+gems:
+  jekyll-crosspost-to-medium
