@@ -1,12 +1,14 @@
 GEM
   specs:
     dotenv (2.1.1)
+    kramdown (1.13.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   dotenv
+  kramdown
 
 BUNDLED WITH
    1.12.5
