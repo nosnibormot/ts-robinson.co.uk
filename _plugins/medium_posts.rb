@@ -1,8 +1,10 @@
 require 'feedjira'
 
-url = "https://medium.com/feed/@tomrobinson_33099"
-feed = Feedjira::Feed.fetch_and_parse url
+def rss_parser(url)
+  Feedjira::Feed.fetch_and_parse(url).entries.each do |e|
+    p "Title: #{e.title}, published on Medium #{e.url}"
+  end
+end
 
-puts "#{feed.title}"
-puts "#{feed.url}"
-puts "#{feed.entries.first.title}"
+
+rss_parser("https://medium.com/feed/@tomrobinson_33099")
