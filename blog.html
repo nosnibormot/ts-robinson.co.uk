@@ -6,27 +6,15 @@ layout: default
 <section id="banner">
     <div class="inner">
         <h2>My Blog</h2>
-        {% for e in site.external_feed %}
-          <h2>{{ e.title }}</h2>
-        <p>{{ e.feed_content }}</p>
-        {% endfor %}
     </div>
 </section>
 <section id="main" class="wrapper style1">
-  {% for e in site.collections['external_feed'].docs %}
+  {% for e in site.external_feed %}
     <h2>{{ e.title }}</h2>
-  <p>{{ e.feed_content }}</p>
+    <p>{{ e.feed_content }}</p>
   {% endfor %}
-          <div class="wrapper {% cycle 'style1', 'style2' %}">
-            <header class="major">
-                <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-            </header>
-            <section class="container">
-            </section>
-            <section class="special">
-                <ul class="actions">
-                    <li><a href="{{ site.baseurl }}{{ post.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
-                </ul>
-            </section>
-        </div>
+<section class="special">
+  <ul class="actions">
+  <li><a href="{{ site.baseurl }}{{ e.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
+  </ul>
 </section>
