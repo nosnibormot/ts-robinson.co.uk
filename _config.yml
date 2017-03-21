@@ -16,3 +16,6 @@ jekyll-crosspost_to_medium:
   status: public # public | draft | unlisted
   #license: all-rights-reserved
   text: '<p><i>This post originally appeared <a href=\"#{url}\" rel=\"canonical\">on ts-robinson.co.uk</a>.</i></p>'
+
+collections:
+  - external_feed
