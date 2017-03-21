@@ -9,13 +9,15 @@ layout: default
     </div>
 </section>
 <section id="main" class="wrapper style1">
-    {% for post in site.posts %}
-        <div class="wrapper {% cycle 'style1', 'style2' %}">
+  {% for item in site.collections['external_feed'].docs %}
+    <h2>{{ item.title }}</h2>
+  <p>{{ item.feed_content }}</p>
+  {% endfor %}
+          <div class="wrapper {% cycle 'style1', 'style2' %}">
             <header class="major">
                 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             </header>
             <section class="container">
-                {{ post.excerpt }}
             </section>
             <section class="special">
                 <ul class="actions">
@@ -23,5 +25,4 @@ layout: default
                 </ul>
             </section>
         </div>
-    {% endfor %}
 </section>
