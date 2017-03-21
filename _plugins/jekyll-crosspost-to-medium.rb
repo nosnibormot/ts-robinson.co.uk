@@ -15,6 +15,7 @@
 #  Setting it to false will skip the processing loop entirely which can be
 #  useful for local preview builds.
 
+require 'dotenv/load'
 require 'json'
 require 'net/http'
 require 'net/https'
