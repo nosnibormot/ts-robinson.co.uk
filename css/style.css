@@ -849,6 +849,8 @@
 	}
 
 		.wrapper.style1 {
+			padding-left: 100px;
+			padding-right: 100px;
 			background: #fff;
 			color: #555f66;
 			text-align: center;
