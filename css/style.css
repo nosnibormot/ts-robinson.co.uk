@@ -10,6 +10,14 @@
 
 /* Basic */
 
+.conference {
+	display: inline;
+	text-align: center;
+}
+
+li {
+	list-style-position: inside;
+}
 
 
 	body {
